@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фотостудия Lens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="style/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/js/main.js">
+    <link rel="stylesheet" href="style/css/media.css">
+    <link rel="stylesheet" href="style/css/jquery-ui.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<div class="main"> 
+<header class="header">
+    <div class="header__content">
+        <div class="container">
+            <div class="header__content-inner">
+                <div class="header__logo all-image">
+                    <a href="#">
+                        <img src="image/logo.png" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="header__burger">
+                	<span>
+                		
+                	</span>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="photo.php" class="header__link">Портфолио</a></li>
+                        <li><a href="contacts.html" class="header__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="background__inner">
+                    <div class = "background__item-text _anim-items">
+                        <p class="background__item-title"><b>
+                            LENS
+                        </b></p>
+                    </div>     
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="background__btn default-btn">
+                            Забронировать
+                        </a>
+             </div>
+        
+    </div>
+</header>
+            <div class="video">
+                <video autoplay muted loop id="myVideo">
+                    <source src="image/videolens.mp4" type="video/mp4">
+                </video>
+            </div>
+</div>
+
+
+<div class="about">
+    <div class="container">
+        <div class="about__info">
+            <div class="about__info-left">
+                        <div class="about__info-h1">
+                            <p class="about__info-title">
+                                Сделай уникальные снимки в нашей фотостудии
+                            </p>
+                        </div>
+                        <div class="about__info-text"><p>Воссоздим все ваши идеи в атмосферном стиле.</p>
+                        <p>В процессе фотосъемки вы опробуете новые для себя роли, 
+                        тем самым раскрывая в себе новые стороны.</p>
+                        </div>
+                <div class="about__wrap">
+                    <div class="about__inner-one">
+                        <div class="about__info-1">
+                                <p class="about__h2">2021</p>
+                                <p class="about__p">год основания студии</p>
+                        </div>
+                        <div class="about__info-1">
+                                <p class="about__h2">15</p>
+                                <p class="about__p">локаций для фотосессии</p>
+                        </div>
+                    </div>
+                    <div class="about__inner-two">
+                        <div class="about__info-1">
+                                <p class="about__h2">3</p>
+                                <p class="about__p">профессиональных фотографа</p>
+                        </div>
+                        <div>
+                            <p class="about__h2">30</p>
+                            <p class="about__p">готовых проектов</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                            <div class="about__info-photo all-image">
+                                <img src="image/two.jpg" class="about__info-photo__inner">
+                            </div>
+        </div>
+    </div>
+</div>                
+
+<section class="studio">
+    <div class="container">
+        <div class="studio__title">Наши студии</div>
+    <div class="studio-list">
+        <a name="studio"></a>
+      <a href="image/studia-one.jpg" class="studio-item">
+        <div class="studio-item-hover">Посмотреть</div>
+        <img src="image/studia-one.jpg" alt="alt">
+      </a>
+      <a href="image/studia-two.jpg" class="studio-item">
+        <div class="studio-item-hover">Посмотреть</div>
+        <img src="image/studia-two.jpg" alt="alt">
+      </a>
+     <a href="image/studia-three.jpg" class="studio-item">
+        <div class="studio-item-hover">Посмотреть</div>
+        <img src="image/studia-three.jpg" alt="alt">
+      </a>
+      <a href="image/studia-four.jpeg" class="studio-item">
+        <div class="studio-item-hover">Посмотреть</div>
+        <img src="image/studia-four.jpeg" alt="alt">
+      </a>
+      
+    </div>
+    </div>
+  </section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".studio-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    }); 
+  </script>
+
+<section class="gallery">
+    <div class="container">
+        <div class="gallery__title">Наши работы</div>
+    <div class="gallery-list">
+        <a name="gallery"></a>
+      <a href="image/one.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/one.jpg" alt="alt">
+      </a>
+      <a href="image/photo.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/photo.jpg" alt="alt">
+      </a>
+     <a href="image/five.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/five.jpg" alt="alt">
+      </a>
+      <a href="image/four.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/four.jpg" alt="alt">
+      </a>
+       <a href="image/three.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/three.jpg" alt="alt">
+      </a>
+      
+      <a href="image/six.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/six.jpg" alt="alt">
+      </a>
+      <a href="image/seven.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/seven.jpg" alt="alt">
+      </a>
+      <a href="image/eight.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="image/eight.jpg" alt="alt">
+      </a>
+    </div>
+    <div class="btn__gallery">
+        <a href="photo.php" alt="">
+            Посмотреть больше
+        </a>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    }); 
+  </script>
+
+<section class = "form">
+    <div class="container">
+        <div class="form__form">
+            <div class="form__title">
+                Свяжитесь с нами!
+            </div>     
+            <div class="form__info-text"><p>
+                Если у вас есть вопросы по поводу съемки, то свяжитесь с нами по форме ниже и мы вам ответим!
+            </p></div> 
+            <form action="send.php" method="post" class="form__input" id="form">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="email" type="text" placeholder="Ваша почта">
+                <input name="phone" type="text" placeholder="Ваш телефон">
+                <textarea name="message" type="text" placeholder="Ваше сообщение" class="form__email"></textarea>
+                <input type="submit" value="Отправить" class="form__btn">
+            </form>
+    </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__content">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <div class="footer__title">
+                        Контактная информация
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-link"><a href="#">lens@gmail.com</a></li>
+                        <li class="footer__list-link"><p>8(923) 123-45-67</p></li>
+                        <li class="footer__list-link"><p>8(953) 987-54-32</p></li>
+                        <li class="footer__list-link"><p>Россия, г. Омск, Гагарина, 10</p></li>
+                    </ul>
+                </div>
+                <div class="footer__map">
+                    <iframe height="250px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2289.189126008024!2d73.37514831553345!3d54.9873179803556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafe1a80e84ef1%3A0x73ed6f7fab8d72ee!2z0YPQuy4g0JPQsNCz0LDRgNC40L3QsCwgMTAsINCe0LzRgdC6LCDQntC80YHQutCw0Y8g0L7QsdC7LiwgNjQ0MDI0!5e0!3m2!1sru!2sru!4v1623329394203!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copy">
+        <div class="container">
+            <div class="copy__text">
+                © 2021 Клочкова Ксения, ИСП381.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="modal">
+    <form action="ajax_form.php" method="post" id="ajax_form" class="modal__form">
+        <div class="modal__form-item form__name">
+            <label class="modal__form-label" style="font-size:14px" for="namemodal">Фамилия имя</label>
+            <input class="modal__form-input" type="text" name="namemodal" id="namemodal" placeholder="Введите имя" required>
+        </div>
+        <div class="modal__form-item">
+            <label class="modal__form-label" style="font-size:14px" for="datemodal">Дата</label>
+            <input class="modal__form-input" type="text" name="datemodal" id="datemodal" placeholder="--.--.----" required>
+        </div>
+        <div class="modal__form-item">
+            <label class="modal__form-label" style="font-size:14px" for="timemodal">Время</label>
+            <input class="modal__form-input" type="time" name="timemodal" id="timemodal" min="09:00" max="22:00" placeholder="--:--" required>
+        </div>
+        <div class="modal__form-item">
+            <label class="modal__form-label" style="font-size:14px" for="numbermodal">Номер телфона</label>
+            <input class="modal__form-input" type="tel" name="numbermodal" id="numbermodal" placeholder="+7 (___) ___ __-__"
+            pattern="^[0-9\s\+\(\)\-]+$" maxlength="16" required>
+        </div>
+        
+        <div class="modal__form-item">
+            <label class="modal__form-label" style="font-size:14px" for="guestmodal">Количество человек</label>
+            <select class="modal__form-input modal__form-select" name="guestmodal" id="guestmodal">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="5">7</option>
+                <option value="6">8</option>
+            </select>
+        </div>
+        <div class="modal__form-item form__checked">
+            <input class="modal__form-checkbox" type="checkbox" id="politicmodal" name="politicmodal" required>
+            <label class="checkbox__label" for="politicmodal"></label>
+            <span class="modal__form-span">Я согласен с политикой конфиденциальности</span>
+        </div>
+        <input class="modal__form-submit" type="submit" id="btn" value="Забронировать">
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="style/js/ajax.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="style/js/jquery.fancybox.min.js"></script>
+  <script src="style/js/jquery.formstyler.min.js"></script>
+  <script src="style/js/jquery-ui.min.js"></script>   
+  <script src="style/js/inputmask.min.js"></script> 
+  <script src="style/js/main.js"></script>
+
+</body>
+</html>
